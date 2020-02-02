@@ -15,7 +15,7 @@ apt-run: &apt-install
   name: Install apt packages
   command: |
     apt update
-    apt install -y graphviz build-essential 
+    apt install -y graphviz build-essential libgl1-mesa-dev xvfb
 
 apt-latex: &apt-latex
   name: Install apt packages
@@ -94,6 +94,9 @@ jobs:
       - run: *merge-check
       - run: *apt-install
       - run: *tox-install
+      - run:
+          name: Binder Pyvista script
+          command: binder/start
       - run: tox -e build_docs
       - store_artifacts:
           path: docs/_build/html
