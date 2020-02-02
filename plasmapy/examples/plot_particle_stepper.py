@@ -63,7 +63,12 @@ solution = trajectory.run(5 * gyroperiod, timestep)
 ############################################################
 # If you have Pyvista, you can  run the following line - it'll open up a neat 3D visualization.
 
-solution.visualize()
+breakpoint()
+import pyvista as pv
+p = pv.Plotter()
+solution.visualize(p)
+p.show()
+
 
 ############################################################
 # As a test, we calculate the mean velocity in the z direction from the
