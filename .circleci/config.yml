@@ -97,7 +97,7 @@ jobs:
       - run:
           name: Binder Pyvista script
           command: binder/start
-      - run: tox -e build_docs
+      - run: tox -v -e build_docs
       - store_artifacts:
           path: docs/_build/html
 
