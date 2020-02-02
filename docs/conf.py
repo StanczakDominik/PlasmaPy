@@ -228,5 +228,6 @@ sphinx_gallery_conf = {
         'binderhub_url': 'https://mybinder.org',
         'dependencies': ['../binder/requirements.txt'],
         'notebooks_dir': 'plasmapy/examples',
-    }
+    },
+    'image_scrapers': ('pyvista',),
 }
