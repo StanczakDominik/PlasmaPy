@@ -63,7 +63,6 @@ solution = trajectory.run(5 * gyroperiod, timestep)
 ############################################################
 # If you have Pyvista, you can  run the following line - it'll open up a neat 3D visualization.
 
-breakpoint()
 import pyvista as pv
 p = pv.Plotter()
 solution.visualize(p)
