@@ -131,9 +131,6 @@ __all__ = [
     "electron_viscosity",
 ]
 
-import numpy as np
-import warnings
-
 from astropy import units as u
 from astropy.constants.si import e, k_B, m_e
 
@@ -149,6 +146,9 @@ from plasmapy.utils import PhysicsError
 from plasmapy.utils.decorators import validate_quantities
 
 
+
+import numpy as np
+import warnings
 class ClassicalTransport:
     r"""
     Classical transport coefficients (e.g. Braginskii, 1965).
