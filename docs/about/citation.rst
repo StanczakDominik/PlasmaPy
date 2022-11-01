@@ -3,7 +3,7 @@
 Acknowledging and Citing
 ========================
 
-.. |version_to_cite| replace:: 0.8.12.0
+.. |version_to_cite| replace:: 0.8.12.2
 .. |doi_hyperlink| replace:: https://doi.org/10.5281/zenodo.1238132
 .. |citation_year| replace:: 2022
 
